@@ -1,0 +1,14 @@
+eu\bittrade\steem\steemstats\ResourceLoader.class
+eu\bittrade\steem\steemstats\EntityManagerFactoryForHK2.class
+eu\bittrade\steem\steemstats\TomcatLauncher.class
+eu\bittrade\steem\steemstats\dao\GenericDao.class
+eu\bittrade\steem\userstats\dto\SteemStatsDTO.class
+eu\bittrade\steem\steemstats\dao\TransactionsDaoImpl.class
+eu\bittrade\steem\steemstats\PersistenceListener.class
+eu\bittrade\steem\steemstats\ResourceLoader$1.class
+eu\bittrade\steem\steemstats\entities\Record.class
+eu\bittrade\steem\steemstats\dao\RecordDaoImpl.class
+eu\bittrade\steem\steemstats\endpoints\WalletsEndpoint.class
+eu\bittrade\steem\steemstats\dao\RecordDao.class
+eu\bittrade\steem\steemstats\entities\TransactionsPerBlock.class
+eu\bittrade\steem\steemstats\dao\TransactionDao.class

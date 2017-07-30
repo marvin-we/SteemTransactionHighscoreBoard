@@ -1,0 +1,35 @@
+version: '3.0'
+
+services:
+  datacollector:
+    restart: always
+    build: ./datacollector
+    depends_on:
+      - mysql
+    links:
+      - mysql
+  datapresenter:
+    restart: always
+    build: ./datapresenter
+    depends_on:
+      - mysql
+    links:
+      - mysql
+    ports:
+      - "8080:8080"
+  mysql:
+    restart: always
+    image: mysql:5.7.16
+    environment:
+      - MYSQL_USER=steem
+      - MYSQL_PASSWORD=steem
+      - MYSQL_DATABASE=steem
+      - MYSQL_ALLOW_EMPTY_PASSWORD=true
+#    To persist the mysql data adjust and enable the lines below:
+#    volumes:
+#      - /my/own/datadir:/var/lib/mysql 
+
+networks:
+  default:
+# Enable the lines below if started in SWARM cluster:
+#    driver: overlay

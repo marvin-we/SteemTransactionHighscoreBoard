@@ -1,0 +1,13 @@
+C:\tmp\SteemTransactionHighscoreBoard\datapresenter\src\main\java\eu\bittrade\steem\steemstats\dao\RecordDao.java
+C:\tmp\SteemTransactionHighscoreBoard\datapresenter\src\main\java\eu\bittrade\steem\steemstats\TomcatLauncher.java
+C:\tmp\SteemTransactionHighscoreBoard\datapresenter\src\main\java\eu\bittrade\steem\steemstats\PersistenceListener.java
+C:\tmp\SteemTransactionHighscoreBoard\datapresenter\src\main\java\eu\bittrade\steem\steemstats\entities\Record.java
+C:\tmp\SteemTransactionHighscoreBoard\datapresenter\src\main\java\eu\bittrade\steem\userstats\dto\SteemStatsDTO.java
+C:\tmp\SteemTransactionHighscoreBoard\datapresenter\src\main\java\eu\bittrade\steem\steemstats\dao\RecordDaoImpl.java
+C:\tmp\SteemTransactionHighscoreBoard\datapresenter\src\main\java\eu\bittrade\steem\steemstats\endpoints\WalletsEndpoint.java
+C:\tmp\SteemTransactionHighscoreBoard\datapresenter\src\main\java\eu\bittrade\steem\steemstats\entities\TransactionsPerBlock.java
+C:\tmp\SteemTransactionHighscoreBoard\datapresenter\src\main\java\eu\bittrade\steem\steemstats\EntityManagerFactoryForHK2.java
+C:\tmp\SteemTransactionHighscoreBoard\datapresenter\src\main\java\eu\bittrade\steem\steemstats\ResourceLoader.java
+C:\tmp\SteemTransactionHighscoreBoard\datapresenter\src\main\java\eu\bittrade\steem\steemstats\dao\GenericDao.java
+C:\tmp\SteemTransactionHighscoreBoard\datapresenter\src\main\java\eu\bittrade\steem\steemstats\dao\TransactionDao.java
+C:\tmp\SteemTransactionHighscoreBoard\datapresenter\src\main\java\eu\bittrade\steem\steemstats\dao\TransactionsDaoImpl.java

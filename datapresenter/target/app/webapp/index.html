@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<base href="/">
+<title>BitTrade.eu - 24 Hours Transactions</title>
+<meta charset="utf-8">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel="stylesheet" href="/assets/libs/ng-table/ng-table.min.css">
+<link rel="stylesheet" href="/assets/css/app.main.css">
+<!-- Libs -->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-animate.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-touch.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-route.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-resource.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/1.2.4/ui-bootstrap-tpls.min.js"></script>
+<script src="/assets/libs/ng-table/ng-table.min.js"></script>
+<!-- Import app scripts -->
+<script>
+var app = angular.module('myApp', []);
+app.controller('myCtrl', function($scope, $http) {
+        $http({method : 'GET', url : 'api/wallets'}).success(function(data, status) {
+            $scope.transactions = data.value;
+         })
+        .error(function(data, status) {
+            alert("Error");
+        });
+});
+</script>
+</head>
+<body style="background-image: url('/assets/img/background.png'); background-size: cover;">
+	<div ng-app="myApp" ng-controller="myCtrl">
+	<div style="border-radius: 6px; background-color: #"
+	<div class="well well-lg">
+	Transaction of the last 28800 blocks: {{transactions}}
+	</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,12 @@
+eu\bittrade\steem\steemstats\datacollector\dao\RecordDaoImpl.class
+eu\bittrade\steem\steemstats\datacollector\dao\TransactionsDaoImpl.class
+eu\bittrade\steem\steemstats\datacollector\QueueWorker.class
+eu\bittrade\steem\steemstats\datacollector\entities\TransactionsPerBlock.class
+eu\bittrade\steem\steemstats\datacollector\dao\GenericDao.class
+eu\bittrade\steem\steemstats\datacollector\dao\RecordDao.class
+eu\bittrade\steem\steemstats\datacollector\BlockchainSynchronization.class
+eu\bittrade\steem\steemstats\datacollector\QueueCrammer.class
+eu\bittrade\steem\steemstats\datacollector\RecordCollector.class
+eu\bittrade\steem\steemstats\datacollector\entities\Record.class
+eu\bittrade\steem\steemstats\datacollector\BlockchainSynchronization$1.class
+eu\bittrade\steem\steemstats\datacollector\dao\TransactionDao.class

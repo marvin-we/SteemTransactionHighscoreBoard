@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<!-- Database connection settings -->
+		<property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+		<property name="hibernate.connection.url">jdbc:mysql://mysql:3306/steem?useSSL=false&amp;useUnicode=true&amp;autoReconnect=true&amp;characterEncoding=utf8</property>
+		<property name="hibernate.connection.username">steem</property>
+		<property name="hibernate.connection.password">steem</property>
+
+		<!-- JDBC connection pool (use the built-in) -->
+		<property name="hibernate.connection.pool_size">20</property>
+		<!-- SQL dialect -->
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</property>
+		<!-- Disable the second-level cache -->
+		<property name="hibernate.cache.provider_class">org.hibernate.cache.internal.NoCacheProvider</property>
+		<!-- Echo all executed SQL to stdout -->
+		<property name="hibernate.show_sql">false</property>
+		<!-- Drop and re-create the database schema on startup -->
+		<property name="hibernate.hbm2ddl.auto">update</property>
+
+		<mapping class="eu.bittrade.steem.steemstats.datacollector.entities.Record"></mapping>
+		<mapping
+			class="eu.bittrade.steem.steemstats.datacollector.entities.TransactionsPerBlock"></mapping>
+	</session-factory>
+</hibernate-configuration>

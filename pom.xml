@@ -1,0 +1,97 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>eu.bittrade.steem</groupId>
+	<artifactId>transaction-highscore-board</artifactId>
+	<version>1.0-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	<name>Steem Transaction Highscore Board</name>
+	<url>https://steem.bittrade.eu</url>
+
+	<developers>
+		<developer>
+			<name>dez1337</name>
+			<email>dez1337@bittrade.eu</email>
+			<organization>bittrade.eu</organization>
+			<organizationUrl>http://www.bittrade.eu</organizationUrl>
+		</developer>
+	</developers>
+
+	<modules>
+		<module>datacollector</module>
+		<module>datapresenter</module>
+	</modules>
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.apache.logging.log4j</groupId>
+				<artifactId>log4j-core</artifactId>
+				<version>${log4j.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.glassfish.jersey.containers</groupId>
+				<artifactId>jersey-container-servlet</artifactId>
+				<version>${jersey.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.glassfish.jersey.media</groupId>
+				<artifactId>jersey-media-json-jackson</artifactId>
+				<version>${jersey.version}</version>
+			</dependency>
+			<!-- Embedded Tomcat -->
+			<dependency>
+				<groupId>org.apache.tomcat.embed</groupId>
+				<artifactId>tomcat-embed-core</artifactId>
+				<version>${tomcat.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.tomcat.embed</groupId>
+				<artifactId>tomcat-embed-logging-juli</artifactId>
+				<version>${tomcat.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.tomcat</groupId>
+				<artifactId>tomcat-jasper</artifactId>
+				<version>${tomcat.version}</version>
+			</dependency>
+			<!-- Database -->
+			<dependency>
+				<groupId>mysql</groupId>
+				<artifactId>mysql-connector-java</artifactId>
+				<version>${mysql.version}</version>
+			</dependency>
+			<!-- Hibernate -->
+			<dependency>
+				<groupId>org.hibernate</groupId>
+				<artifactId>hibernate-core</artifactId>
+				<version>${hibernate.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.hibernate</groupId>
+				<artifactId>hibernate-entitymanager</artifactId>
+				<version>${hibernate.version}</version>
+			</dependency>
+			<!-- Steem -->
+			<dependency>
+				<groupId>eu.bittrade.libs</groupId>
+				<artifactId>steem-api-wrapper</artifactId>
+				<version>${steem.api.wrapper.version}</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+		<java.version>1.8</java.version>
+
+		<steem.api.wrapper.version>0.1.1-SNAPSHOT</steem.api.wrapper.version>
+		<jersey.version>2.25</jersey.version>
+		<tomcat.version>9.0.0.M6</tomcat.version>
+		<log4j.version>2.8.1</log4j.version>
+		<mysql.version>6.0.6</mysql.version>
+		<hibernate.version>5.2.8.Final</hibernate.version>
+		<steem.api.wrapper.version>0.3.2-SNAPSHOT</steem.api.wrapper.version>
+	</properties>
+</project>

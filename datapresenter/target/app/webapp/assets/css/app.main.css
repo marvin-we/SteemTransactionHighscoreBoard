@@ -1,0 +1,13 @@
+@CHARSET "UTF-8";
+
+<!-- Angular ui fix -->
+.nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
+
+.margin-top {
+	margin-top: 10px !IMPORTANT;
+}
+
+#navbar-custom {
+	border-radius: 0px !IMPORTANT;
+	margin-bottom: 0px !IMPORTANT;
+}
